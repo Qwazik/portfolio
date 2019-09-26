@@ -1,0 +1,6 @@
+mixin props(props)
+    ul.props
+        -for(prop in props)
+            li.props__item
+                span.props__name!=prop
+                span.props__value!=props[prop]

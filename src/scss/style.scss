@@ -1,0 +1,75 @@
+@import "_settings/_mixins";
+@import "_settings/_config";
+@import "_settings/_reset";
+@import "_settings/_fonts";
+@import "_bootstrap-grid.scss"; 
+ 
+/*-- START: base --*/
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: $core-fz;
+  font-family: $ff-primary;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+%off-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*-- END: base --*/
+
+/* ========================
+START: ELEMENTS
+========================*/
+
+/*-- START: page --*/
+@import '../pug/blocks/page/page';
+/*-- END: page --*/
+
+/*-- START: header --*/
+@import '../pug/blocks/header/header';
+/*-- END: header --*/
+
+/*-- START: footer --*/
+@import '../pug/blocks/footer/footer';
+/*-- END: footer --*/
+
+/*========================
+END: ELEMENTS
+========================*/
+
+/* ========================
+START: UTILITIES
+========================*/
+
+.ovh{
+  overflow: hidden;
+}
+.off-list{
+  @extend %off-list;
+}
+
+/*========================
+END: UTILITIES
+========================*/
+
+/* ========================
+START: MEDIA
+========================*/
+
+/*========================
+END: MEDIA
+========================*/
+
+/* ========================
+START: PLUGINS
+========================*/
+
+/*========================
+END: PLUGINS
+========================*/
