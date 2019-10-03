@@ -6,7 +6,7 @@
   "author": "Kovakin Alexey <qwazik21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "bowerClean" : "find build/libs -mindepth 2 -type d -not \\( -path **/dist -prune \\) -print0 | xargs -0 rm -rf && find build/libs -maxdepth 2 -type f -print0 | xargs -0 rm -rf",
+    "bowerClean": "find build/libs -mindepth 2 -type d -not \\( -path **/dist -prune \\) -print0 | xargs -0 rm -rf && find build/libs -maxdepth 2 -type f -print0 | xargs -0 rm -rf",
     "start": "gulp",
     "prod": "set NODE_ENV='production' && bower i && yarn bowerClean && gulp build && gulp zip",
     "end": "git add . && git commit -m 'autodeploy' && git push -u origin master && npm run prod && gulp deploy"

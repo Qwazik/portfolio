@@ -1,0 +1,4 @@
+mixin link(href, title, icon)
+	a(href=href)&attributes(attributes).link
+		span.link__icon: i(class=`icm icm-${icon}`)
+		span.link__title= title
