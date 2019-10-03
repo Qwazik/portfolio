@@ -3,6 +3,7 @@
 @import "_settings/_reset";
 @import "_settings/_fonts";
 @import "_bootstrap-grid.scss"; 
+@import "../fonts/icomoon/style.css";
  
 /*-- START: base --*/
 html{
@@ -27,17 +28,11 @@ body{
 START: ELEMENTS
 ========================*/
 
-/*-- START: page --*/
-@import '../pug/blocks/page/page';
-/*-- END: page --*/
-
-/*-- START: header --*/
+/*-- START: components --*/
 @import '../pug/blocks/header/header';
-/*-- END: header --*/
-
-/*-- START: footer --*/
+@import '../pug/blocks/link/link';
 @import '../pug/blocks/footer/footer';
-/*-- END: footer --*/
+/*-- END: components --*/
 
 /*========================
 END: ELEMENTS
@@ -50,6 +45,7 @@ START: UTILITIES
 .ovh{
   overflow: hidden;
 }
+
 .off-list{
   @extend %off-list;
 }

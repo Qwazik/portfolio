@@ -1,0 +1,23 @@
+.link {
+	color: inherit;
+	text-decoration: none;
+	color: #319EF0;
+	display: inline-flex;
+
+	&__icon {
+		margin-right: .7rem;
+		line-height: 1.3em;
+	}
+
+	&:hover {
+		color: darken(#319EF0, 10%);
+	}
+
+	&:active {
+		color: darken(#319EF0, 30%);
+	}
+
+	&:visited {
+		color: #999;
+	}
+}

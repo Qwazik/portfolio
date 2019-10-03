@@ -1,14 +1,33 @@
 extends templates/_default
 
 block head
-    title Home
+	title Home
 
 block header
-    +header
+	+header
 
 block main
-    .container
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate mollitia error pariatur ad. Sint suscipit quae quod in, rerum magnam consequuntur, libero praesentium ex amet obcaecati aspernatur neque fugit!
-    
+	.container
+
+		+link(
+			'#', 
+			'+79208333838', 
+			'phone'
+		).container__link
+
+		+link(
+			'#', 
+			'qwazik21@gmail.com', 
+			'mail'
+		).container__link
+
+		+link(
+			'#', 
+			'qwaaziiik', 
+			'skype'
+		).container__link
+		
+		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptate mollitia error pariatur ad. Sint suscipit quae quod in, rerum magnam consequuntur, libero praesentium ex amet obcaecati aspernatur neque fugit!
+	
 block footer
-    +footer
+	+footer
